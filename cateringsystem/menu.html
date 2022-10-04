@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu page</title>
+<style type="text/css">
+@font-face {
+  font-family: rf;
+  src: url("fonts/RikhalFancy.ttf");
+}
+table{
+ 
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2; 
+}
+
+tr{
+	 
+}
+
+.zoom{
+	transition: transform 0.5s;
+}
+.zoom:hover{
+	transform: scale(1.5);
+}
+td{
+    border:1px solid; 
+    width:300px;
+    height:200px;
+}
+td img{
+    width:300px;
+    height:200px;
+}
+.hover{
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    width:300px;
+    height:200px;
+}
+
+</style>
+</head>
+<body>
+    
+    <center>
+        
+   <table>
+     <tr>
+        <td class="zoom">
+            <div  class="hover"></div>
+            <img src="img/breakfast.jpg"  width="50%">
+            <a href="scripts/breakfast.php">Breakfast</a>
+        </td>
+        <td class="zoom">
+            <div  class="hover"></div>
+            <img src="img/lunch.jpg"  width="60%">
+            <a href="scripts/lunch.php" >Lunch</a>
+            <!-- <img src="img/lunch.jpg" width="40%"> -->
+        </td>
+    </tr>
+    <tr>
+        <td class="zoom">
+            <div  class="hover"></div>
+            <img src="img/snacks.jpg" width="50%">
+            <a href="scripts/snacks.php">Snacks</a>
+        </td>
+        <td class="zoom">
+            <div  class="hover"></div>
+            <img src="img/dinner.jpg" width="40%">
+            <a href="scripts/dinner.php"> Dinner</a>
+        </td>
+    </tr>
+</table>
+    </center>
+
+</body>
+</html>

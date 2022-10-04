@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>sign up</title>
+    <link rel="stylesheet" href="css/syle2.css">
+ </head>
+ <body>
+
+
+     <div class="overlay" style="
+  position: absolute; top:0px;width:100%;height:100%;z-index: 3; background: rgba(0,0,0,.7);">
+	 </div>
+	<div class="form_container">
+	    <div class="form_title">Sign Up</div>
+	    <form action="scripts/signup.php" method="POST" class="signup_form">
+	    	<input type="text" name="fname" placeholder="First Name"> &nbsp;
+	    	<input type="text" name="lname" placeholder="Last Name"><br><br>
+	        <input type="text" name="email" placeholder="Email"> &nbsp;
+	        <input type="text" name="phoneNo" placeholder="Phone Number"><br><br>
+	        <input type="text" id="pass1" placeholder="Password"> &nbsp;
+	        <input type="text" id="pass2" name="password" placeholder="Confirm Password"><br><br>
+	        <input type="submit" value="Sign Up" class="signup_btn" name="signup">
+
+	    </form>
+
+         <style type="text/css">
+			.form_container{
+				position: absolute;
+				top:110px;
+				left:430px;
+				display:none;
+				z-index: 3;
+			}
+		</style>
+
+	</div>
+
+<button id="loginBtn">Sign Up</button>
+
+</body>
+</html>
+
+<script type="text/javascript" src="js/main.js"></script>
